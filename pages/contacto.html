@@ -16,7 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
     <title> Contacto </title>
 </head>
 <body>
@@ -26,30 +33,37 @@
       <img src="../img/sol-de-mayo-3.png" alt="">    
             <H1 class="logo">MiARG</H1>
             
-            <nav>
-                <ul>
-                    <li><a class="navegacion" href="../index.html">Inicio</a></li>
-                    <li><a class="navegacion" href="../pages/tematicas.html">Tematicas</a></li>
-                    <li><a class="navegacion" href="../pages/noticias.html">Noticias</a></li>
-                    <li><a class="navegacion" href="../pages/acercade.html">Acerca de MiARG</a></li>
-                    <li><a class="navegacion" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+            <nav class="nav-bar">
             
-         </nav>
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../pages/tematicas.html">TEMATICAS</a></li>
+                    <li><a href="../pages/noticias.html">NOTICIAS</a></li>
+                    <li><a href="../pages/acercade.html">ACERCA DE MiARG</a></li>
+                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                </ul>
+
+            
+            
+            </nav>
     </header>
     <main>
-        <section>
+        <section class="seccion-cont">
             <h2>Contacto</h2>
                 <p>Aqui podras contactarte conmigo para enviar tus sugerencias para mejorar la pagina.</p>
-                <br><form action="./submit" method="post"> 
-                <label for="nombref">Nombre:</label>
-                <input type="text" name="nombref" id="nombref" required><br>                     
-                <label for="emailf">Email:</label>
-                <input type="email" name="emailf" id="emailf"><br>
-                <label for="formulario">Deja tu mensaje:</label>
-                <textarea name="formulario" id="formulario"></textarea><br>
+                
+                <br><form action="./submit" method="post" class="formulario"> 
+                
+                    <label for="nombref">Nombre:</label>
+                    <input type="text" name="nombref" id="nombref" required><br>                     
+                
+                    <label for="emailf">Email:</label>
+                    <input type="email" name="emailf" id="emailf"><br>
+                
+                    <label for="form">Deja tu mensaje:</label>
+                    <textarea name="formulario" id="formulario"></textarea><br>
 
-                <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="boton">
                         
             </form>
 
@@ -64,17 +78,29 @@
         
     </main> 
         
-    <footer><br> 
-        <section>
-                <img src="../img/sol-de-mayo-2.png" alt="">
-                <img src="../img/instagram.png" alt="">  
-                <img src="../img/twitter.png" alt=""> 
-                <img src="../img/facebbok.png" alt="">
-                <img src="../img/linkedin.png" alt="">
-                <h2>Informacion de contacto:</h2>
-                <address>   
-                <p>Email:tomas.fresca@gmail.com Telefono:1164591701</p>   
-                </address>
+    <footer class="piedepag"> 
+        <section class="footer-cont">
+            
+            <div class="footer-logo">
+                <img src="../img/sol-de-mayo-2.png" alt="logo">
+            </div>    
+            
+            <div class="footer-social">
+                <img src="../img/instagram.png" alt="instagram">  
+                <img src="../img/twitter.png" alt="twitter"> 
+                <img src="../img/facebbok.png" alt="facebbok">
+                <img src="../img/linkedin.png" alt="linkedin">
+            </div>
+                
+               <div class="footer-contacto">
+                    <h2>Informacion de contacto:</h2>
+                    <address>   
+                        <p>Email:tomas.fresca@gmail.com</p>
+                        <p>Telefono:1164591701</p>   
+                    </address>
+               </div> 
+                
+
         </section>
 
     </footer>

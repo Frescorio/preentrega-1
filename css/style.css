@@ -15,28 +15,41 @@ body{
     background-color: bisque;
 }
 
+main{
+    margin: 40px 0;
+
+}
+
+
 .encabezadoinicio{
     display: flex;
     background-color: rgb(172, 73, 73);
-    height: 65px;
-    width: 100%;
-    top: 0;
-    left: 0%;
     align-items: center;
-    
+    justify-content: space-between;
+    padding: 5px 15px;
 }
 
 .nav-bar ul{
     display: flex;
     list-style: none;
-    
+    gap: 50px;
+    margin: 0;
+    padding: 0;
     
 }
 
-.nav-bar ul li a{
+.nav-bar a{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: black;
     text-decoration: none;
-    
+    transition: color 0.3s;
+
+}
+
+.nav-bar a:hover {
+    color: white;
 }
 
 
@@ -44,86 +57,83 @@ body{
 
 .logo{
     color:black;
-    font-size: 35px;
-    margin-right: 65%;
+    font-size: 1.5rem;
+    display: inline-block;
     font-family: logo;
+    margin-right: auto;
 }  
 
 .logoimg{
-margin-right: auto;
-
+    margin-right: 10px;
+    height: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-p{
-    font-family: "Playfair Display", serif;
-}
 
 .seccion-inicio{
     color: black;
-    text-align: center;
-    font-size: 35px;
-    font-family: fuentetitulos;
-    position: fixed;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    min-height: 70vh;
+    
+}
+
+.tit-inicio{
+    font-size: 50px;
+    font-family: fuentetitulos;
+}
+
+
+.contenedor-inicio{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(199, 201, 203);
+    text-align: center;
+    border-radius: 10px;
+
 }
 
 .p-inicio{
-    
-    color: rgb(0, 0, 0);
+    font-family: "Playfair Display", serif;
     text-align: center;
     font-size: 25px;
 }
 
-footer img{
-    margin-right: auto;
-
+.seccion-cont{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
-footer section {
+.formulario{
     display: flex;
-    align-items: center;
-    font-size: small;
-    width: 100%;
-    height: 60px;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.formulario input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario textarea{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.boton{
     background-color: rgb(172, 73, 73);
-    bottom: 0;
-    position: absolute;
+    color: white;
+
 }
 
 
@@ -146,4 +156,60 @@ article img{
     height: 300px;
     
 
+}
+
+footer {
+    background-color: rgb(172, 73, 73);
+    color:white;
+    padding: 10px 0 ;
+}
+
+.footer-cont{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-logo{
+    width: 50px;
+    height: auto;
+    display: block;
+    margin-left:  -400px ;
+}
+
+.footer-social{
+    display: flex;
+    gap: 100px;
+}
+
+.footer-social img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.footer-cont{
+    margin-left:auto;
+    text-align: right;
+    
+
+}
+
+.footer-contacto h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    
+
+}
+
+.footer-contacto p{
+    font-family: "Montserrat", sans-serif;
+    margin: 3px 0;
+    
 }
