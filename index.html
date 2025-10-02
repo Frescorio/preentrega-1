@@ -1,87 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Bienvenidos este es mi prototipo de enciclepia sobre Argentina-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <!--Tipografias-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
     <title>MiARG </title>
 </head>
+
 <body>
-    
-   <header class="encabezadoinicio">
-        <img class="logoimg" src="./img/sol-de-mayo-3.png" alt="">    
-         <h1 class="logo">MiARG</h1>
-           
-            <nav class="nav-bar">
-            
-                <ul>
-                    <li><a href="./index.html">INICIO</a></li>
-                    <li><a href="./pages/tematicas.html">TEMATICAS</a></li>
-                    <li><a href="./pages/noticias.html">NOTICIAS</a></li>
-                    <li><a href="./pages/acercade.html">ACERCA DE MiARG</a></li>
-                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                </ul>
 
-            
-            
-            </nav>
-         
-         
+    <header>
+        <nav class="navbar navbar-expand-lg ">
 
-   </header>  
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MiARG</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages/tematicas.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tematicas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/tematicas.html">Historia</a></li>
+                                <li><a class="dropdown-item" href="./pages/tematicas.html">Personajes Historicos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/tematicas.html">Cultura</a></li>
+                                <li><a class="dropdown-item" href="./pages/tematicas.html">Gastronomia</a></li>
+                                <li><a class="dropdown-item" href="./pages/tematicas.html">Ciencia</a></li>
+                                <li><a class="dropdown-item" href="./pages/tematicas.html">Geografia y Naturaleza</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/acercade.html">Acerca de MiARG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+                        <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
     <main>
         <section class="seccion-inicio">
             <div class="contenedor-inicio">
-                <h2 class="tit-inicio" >Bienvenid@ a MiARG</h2>
-                    <video src="https://www.youtube.com/watch?v=uvQydh-2zzo" controls></video> <!--Este es un video de ejemplo-->
-                        <p class="p-inicio">Este es un espacio pensado para que conozcas todo lo que hace única a la Argentina: su historia, sus costumbres, sus paisajes, su gente y mucho más. La idea es que puedas encontrar información clara y sencilla, como si estuvieras charlando con un amigo que te cuenta sobre el país. Ya sea que quieras aprender algo nuevo, investigar para la escuela o simplemente tengas curiosidad, acá vas a encontrar un lugar para descubrir y disfrutar.</p>  
+                <h2 class="tit-inicio">Bienvenid@ a MiARG</h2>
+                <video src="https://www.youtube.com/watch?v=uvQydh-2zzo" controls></video>
+                <p class="p-inicio">Este es un espacio pensado para que conozcas todo lo que hace única a la Argentina:
+                    su historia, sus costumbres, sus paisajes, su gente y mucho más. La idea es que puedas encontrar
+                    información clara y sencilla, como si estuvieras charlando con un amigo que te cuenta sobre el país.
+                    Ya sea que quieras aprender algo nuevo, investigar para la escuela o simplemente tengas curiosidad,
+                    acá vas a encontrar un lugar para descubrir y disfrutar.</p>
 
             </div>
-                        
+
         </section>
 
 
     </main>
-            
 
-    
-<footer class="piedepag"> 
+
+    <footer class="piedepag">
         <section class="footer-cont">
-            
+
             <div class="footer-logo">
                 <img src="./img/sol-de-mayo-2.png" alt="logo">
-            </div>    
-            
-            <div class="footer-social">
-                <img src="./img/instagram.png" alt="instagram">  
-                <img src="./img/twitter.png" alt="twitter"> 
-                <img src="./img/facebbok.png" alt="facebbok">
-                <img src="./img/linkedin.png" alt="linkedin">
             </div>
 
+            <div class="footer-social">
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+            </div>
         </section>
+    </footer>
 
-</footer>
 
 
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

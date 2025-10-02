@@ -10,81 +10,89 @@
 }
 
 
-body{
-    
+body {
+
     background-color: bisque;
 }
 
-main{
+main {
     margin: 40px 0;
 
 }
 
+/* ---Header--- */
 
-.encabezadoinicio{
-    display: flex;
+header {
     background-color: rgb(172, 73, 73);
     align-items: center;
     justify-content: space-between;
     padding: 5px 15px;
 }
 
-.nav-bar ul{
+.navbar-nav {
+    margin: 0 auto;
+    text-align: center;
     display: flex;
-    list-style: none;
-    gap: 50px;
-    margin: 0;
-    padding: 0;
-    
+    gap: 4vw;
 }
 
-.nav-bar a{
+.navbar-nav .nav-link {
+    padding: 0 15px;
+    font-size: 1.3rem;
+}
+
+.navbar-brand {
+    font-family: logo;
+    font-size: 29px;
+    font-weight: 900;
+
+}
+
+a.nav-link {
     font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s;
+    font-size: large;
 
 }
 
-.nav-bar a:hover {
+a.nav-link.active:hover {
     color: white;
 }
 
+a.nav-link:hover {
+    color: white;
+}
 
+.btn {
+    border: 1px solid black;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+}
 
+.btn:hover {
+    background-color: beige;
 
-.logo{
-    color:black;
-    font-size: 1.5rem;
-    display: inline-block;
-    font-family: logo;
-    margin-right: auto;
-}  
-
-.logoimg{
-    margin-right: 10px;
-    height: 50px;
 }
 
 
-.seccion-inicio{
+
+
+/* ---Main--- */
+.seccion-inicio {
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 70vh;
-    
+
 }
 
-.tit-inicio{
+.tit-inicio {
     font-size: 50px;
     font-family: fuentetitulos;
 }
 
 
-.contenedor-inicio{
+.contenedor-inicio {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -94,13 +102,13 @@ main{
 
 }
 
-.p-inicio{
+.p-inicio {
     font-family: "Playfair Display", serif;
     text-align: center;
     font-size: 25px;
 }
 
-.seccion-cont{
+.seccion-cont {
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
@@ -109,107 +117,121 @@ main{
     font-family: "Montserrat", sans-serif;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+
 }
 
-.formulario input{
+.formulario input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
 }
 
-.formulario textarea{
+.formulario textarea {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
 }
 
-.boton{
+.boton {
     background-color: rgb(172, 73, 73);
     color: white;
 
 }
 
 
-article{
-    display:flex ;
+article {
+    display: flex;
 }
 
 
-.p-noticias{
-    
+.p-noticias {
+
     font-size: 27px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-style: normal;     
+    font-style: normal;
 
-}            
+}
 
-article img{
+article img {
     width: 20%;
     height: 300px;
-    
+
 
 }
 
+
+
+/* --- Footer --- */
 footer {
     background-color: rgb(172, 73, 73);
-    color:white;
-    padding: 10px 0 ;
+    color: white;
+    padding: 20px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
 }
 
-.footer-cont{
-    display:flex ;
+footer a i {
+    color: black;
+    font-size: 32px;
+}
+
+footer a i:hover{
+    color: white;
+}
+
+.footer-cont {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
-    flex-wrap: wrap;
-    width: 100%;
+    position: relative;
 }
 
-.footer-logo{
+.footer-logo {
+    flex: 0 0 auto;
+}
+
+.footer-logo img {
     width: 50px;
     height: auto;
     display: block;
-    margin-left:  -400px ;
 }
 
-.footer-social{
+.footer-social {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 100px;
-}
-
-.footer-social img{
-    width: 30px;
-    height: 30px;
-    
-}
-
-.footer-cont{
-    margin-left:auto;
-    text-align: right;
-    
+    gap: 40px;
 
 }
 
-.footer-contacto h2{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    
 
-}
 
-.footer-contacto p{
-    font-family: "Montserrat", sans-serif;
-    margin: 3px 0;
-    
+@media (max-width: 768px) {
+    .footer-contacto {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-social {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-logo {
+        text-align: center;
+        width: 100%;
+    }
 }
