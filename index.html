@@ -51,53 +51,88 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./pages/tematicas.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Tematicas
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/tematicas.html">Historia</a></li>
-                                <li><a class="dropdown-item" href="./pages/tematicas.html">Personajes Historicos</a>
-                                </li>
-                                <li><a class="dropdown-item" href="./pages/tematicas.html">Cultura</a></li>
-                                <li><a class="dropdown-item" href="./pages/tematicas.html">Gastronomia</a></li>
-                                <li><a class="dropdown-item" href="./pages/tematicas.html">Ciencia</a></li>
-                                <li><a class="dropdown-item" href="./pages/tematicas.html">Geografia y Naturaleza</a>
-                                </li>
-
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../preentrega-1/pages/tematicas.html">Tematicas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+                            <a class="nav-link" href="../preentrega-1/pages/noticias.html">Noticias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/acercade.html">Acerca de MiARG</a>
+                            <a class="nav-link" href="../preentrega-1/pages/acercade.html">Acerca de MiARG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="../preentrega-1/pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
-                        <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+                        <button class="btn" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
 
-
     <main>
         <section class="seccion-inicio">
             <div class="contenedor-inicio">
                 <h2 class="tit-inicio">Bienvenid@ a MiARG</h2>
-                <video src="https://www.youtube.com/watch?v=uvQydh-2zzo" controls></video>
                 <p class="p-inicio">Este es un espacio pensado para que conozcas todo lo que hace única a la Argentina:
                     su historia, sus costumbres, sus paisajes, su gente y mucho más. La idea es que puedas encontrar
                     información clara y sencilla, como si estuvieras charlando con un amigo que te cuenta sobre el país.
                     Ya sea que quieras aprender algo nuevo, investigar para la escuela o simplemente tengas curiosidad,
                     acá vas a encontrar un lugar para descubrir y disfrutar.</p>
+
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="image-container">
+                                <img src="./img/historia-837x500.jpg" class="d-block w-100" alt="...">
+                                <div class="text-overlay">Los hechos que marcaron el rumbo de Argentina.</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image-container">
+                                <img src="./img/personajes-historicos-837x500.jpg" class="d-block w-100" alt="...">
+                                <div class="text-overlay">Grandes figuras que hicieron historia en el país.</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image-container">
+                                <img src="./img/cultura-837x500.jpg" class="d-block w-100" alt="...">
+                                <div class="text-overlay">Tradiciones, arte y costumbres argentinas.</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image-container">
+                                <img src="./img/gastronomia-837x500.jpeg" class="d-block w-100" alt="...">
+                                <div class="text-overlay">Sabores únicos: asado, empanadas y mate.</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image-container">
+                                <img src="./img/ciencia-837x500.jpg" class="d-block w-100" alt="...">
+                                <div class="text-overlay">Avances y descubrimientos hechos en Argentina.</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image-container">
+                                <img src="./img/geo-y-natu-837x500.jpeg" class="d-block w-100" alt="...">
+                                <div class="text-overlay">Paisajes, climas y ecosistemas del país.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
             </div>
 
